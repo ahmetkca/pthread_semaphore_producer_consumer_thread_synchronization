@@ -18,6 +18,8 @@ typedef struct params {
     int index;
 } params_t;
 
+
+/* coroutine for calculating factorial for given number and using a shared array to update the given index based on previous index */
 void *factorial(void *vptr)
 {
     params_t *params = (params_t *) vptr;
